@@ -1,2 +1,8 @@
 apply plugin: 'java'
 apply from: 'gretty.plugin'
+
+gretty {
+    // Possible servletContainer values are 'jetty7', 'jetty8', 'jetty9', 'tomcat7', 'tomcat8'. Default is 'jetty9'.
+    servletContainer = 'jetty8'
+    // httpsEnabled = true
+}
